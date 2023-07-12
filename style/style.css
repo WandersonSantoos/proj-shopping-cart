@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #161927;
+    color: white;
+    font-family: sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px;
+}
+
+.container-main {
+    width: 40%;
+    margin: auto;
+}
+
+.valor, .quantidade {
+    margin-left: 15px;
+}
+
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input {
+    background-color: #4c536b;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.campoNome {
+    padding: 10px;
+    width: 180px;
+}
+
+.campoValor {
+    padding: 10px;
+    width: 120px;
+}
+
+.campoQuanti {
+    padding: 10px;
+    width: 50px;
+}
+
+.cadastro {
+    background-color: #FFC700;
+    color: black;
+    height: 40px;
+    padding: 10px;
+    margin: 40px 0 0 20px;
+    cursor: pointer;
+}
+
+.cadastro:hover {
+    transition: .3s ease-in;
+    background-color: rgb(63, 189, 63);
+    border: 1px white solid;
+    color: white;
+}
+
+.lista-cadastro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 25px;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.list-cada-produtos {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-top: 1px solid whitesmoke;
+}
+
+.lista-soma {
+    display: flex;
+    justify-content: space-between;
+}
+
+.soma-produtos {
+    border-top: 1px solid whitesmoke;
+    padding: 25px 10px 10px 10px;
+}
+
+.clear {
+    background-color: red;
+    font-weight: bolder;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.clear:hover {
+    background-color: rgb(255, 94, 94);
+    transition: .3s ease-in;
+}
+
+@media screen and (max-width: 500px) {
+    .container-main {
+        margin: 0 0 0 8vw;
+    }
+
+    .lista-cadastro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campoNome {
+        width: 40vw;
+    }
+
+    .campoValor {
+        width: 33vw;
+    }
+
+    .campoQuanti {
+        width: 40vw;
+    }
+
+    .quantidade {
+        margin: 15px 0 0 0;
+    }
+
+    .cadastro {
+        margin: 52px 15px 0px 14vw;
+    }
+
+    .resul-produto {
+        padding: 10px;
+        font-size: 0.89rem;
+    }
+
+    .list-cada-produtos {
+        width: 75vw;
+    }
+
+    .soma-produtos{
+        width: 82vw;
+    }
+
+    .total-produto {
+        font-size: 27px;
+    }
+}

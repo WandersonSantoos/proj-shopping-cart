@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <title>Carrinho de compras | Wanderson</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Shopping Cart <i class="uil uil-shopping-cart"></i></h1>
+    </header>
+
+    <main class="corpo-principal">
+        <div class="container-main">
+            <div class="lista-cadastro">
+                <div class="nome-produto">
+                    <label for="nomeProduto">Nome do produto:</label>
+                    <input class="campoNome" type="text" name="nome-Produto" placeholder="Camisa" required autofocus>
+                </div>
+
+                <div class="valor">
+                    <label for="valorProduto">Valor:</label>
+                    <input class="campoValor" type="number" name="price" placeholder="10" step="0.50" min="0" required>
+                </div>
+
+                <div class="quantidade ">
+                    <label for="quantidadeProduto">Quant:</label>
+                    <input class="campoQuanti" type="number" name="quantidade-Produto" placeholder="1" min="0" required>
+                </div>
+                
+                <div>
+                    <input class="cadastro" type="submit" name="cadastrar" value="+ Adicionar">
+                </div>
+
+            </div>
+
+            <div class="lista-produtos">
+                <div class="resul-produto">
+                    <h2>Produto:</h2>
+                </div>
+
+                <div class="resul-produto">
+                    <h2>Quantidade:</h2>
+                </div>
+
+                <div class="resul-produto">
+                    <h2>Valor(x):</h2>
+                </div>
+            </div>
+
+            <div class="lista-cada-produtos">
+                    
+            </div>
+
+            <div class="soma-produtos">
+                <div class="lista-soma">
+                    <h1 class="total-produto">Total: R$ </h1>
+                    <button class="clear" name="limpar">Limpar <i class="uil uil-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
